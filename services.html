@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SIRVI Neuro & ENT Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="logo pic5.png" alt="SIRVI Neuro & ENT Center Logo" class="logo-icon-img">
+                    <div class="logo-text-content">
+                        <h1>SIRVI</h1>
+                        <span>NEURO & ENT CENTER</span>
+                        <div class="logo-line"></div>
+                    </div>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#doctors">Doctors</a></li>
+                    <li><a href="book-appointment.html">Book an Appointment</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h2 class="blur-reveal">Our Services & Treatments</h2>
+            <p class="blur-reveal blur-d1">Comprehensive non-surgical medical care tailored to your needs</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="services-search blur-reveal">
+                <div class="search-input-wrap">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="treatmentSearch" placeholder="Search treatments..." autocomplete="off">
+                    <button class="search-clear" id="searchClear" aria-label="Clear search"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <!-- Neuro Category -->
+            <div class="service-category blur-reveal blur-d2" data-category="neuro">
+                <div class="category-header">
+                    <div class="category-icon neuro-icon"><i class="fas fa-brain"></i></div>
+                    <div>
+                        <h3>Neurology Treatments</h3>
+                        <p>Expert neurological care for brain, nerve & spine conditions</p>
+                    </div>
+                </div>
+                <div class="services-grid blur-reveal blur-d3">
+                    <div class="service-card" data-search="neurology consultation diagnosis migraine epilepsy neuropathy">
+                        <div class="service-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Neurology Consultation</h3>
+                        <p>Expert diagnosis and management of neurological disorders including migraines, epilepsy, and neuropathy. Our neurologists use advanced diagnostic tools to provide accurate assessments and personalized treatment plans.</p>
+                    </div>
+                    <div class="service-card" data-search="eeg nerve studies brain activity peripheral nerve">
+                        <div class="service-icon"><i class="fas fa-wave-square"></i></div>
+                        <h3>EEG & Nerve Studies</h3>
+                        <p>Non-invasive diagnostic testing for brain activity and peripheral nerve function. Our advanced EEG and nerve conduction studies help detect and monitor neurological conditions accurately.</p>
+                    </div>
+                    <div class="service-card" data-search="vertigo balance therapy dizziness bppv vestibular">
+                        <div class="service-icon"><i class="fas fa-dna"></i></div>
+                        <h3>Vertigo & Balance Therapy</h3>
+                        <p>Specialized treatment for dizziness, BPPV, and vestibular rehabilitation programs. Our balance therapy programs are designed to restore stability and confidence in daily activities.</p>
+                    </div>
+                    <div class="service-card" data-search="headache pain management migraine chronic">
+                        <div class="service-icon"><i class="fas fa-comment-medical"></i></div>
+                        <h3>Headache & Pain Management</h3>
+                        <p>Comprehensive non-surgical approaches to chronic headaches and neurological pain. Our multidisciplinary team creates customized pain management plans for lasting relief.</p>
+                    </div>
+                    <div class="service-card" data-search="parkinson disease movement disorder tremor rigidity">
+                        <div class="service-icon"><i class="fas fa-person-walking"></i></div>
+                        <h3>Parkinson's Disease Management</h3>
+                        <p>Comprehensive care for tremors, rigidity and movement disorders. Our neurologists design medication optimization and therapy programs to improve mobility and quality of life.</p>
+                    </div>
+                    <div class="service-card" data-search="multiple sclerosis ms neurology">
+                        <div class="service-icon"><i class="fas fa-atom"></i></div>
+                        <h3>Multiple Sclerosis Care</h3>
+                        <p>Specialized treatment plans for MS symptom management. We offer personalized therapies to slow progression and improve daily functioning for patients at every stage.</p>
+                    </div>
+                    <div class="service-card" data-search="sleep disorder insomnia parasomnia sleep study">
+                        <div class="service-icon"><i class="fas fa-moon"></i></div>
+                        <h3>Sleep Disorder Treatment</h3>
+                        <p>Diagnosis and non-surgical management of sleep disorders including insomnia and parasomnia. We conduct advanced sleep studies and provide targeted therapy for restful sleep.</p>
+                    </div>
+                    <div class="service-card" data-search="cognitive assessment memory attention brain function neuropsychological">
+                        <div class="service-icon"><i class="fas fa-microscope"></i></div>
+                        <h3>Cognitive Assessment</h3>
+                        <p>Evaluation of memory, attention and overall brain function. Our advanced neuropsychological testing enables early detection and intervention for cognitive decline.</p>
+                    </div>
+                    <div class="service-card" data-search="spine back pain therapy nerve block physiotherapy">
+                        <div class="service-icon"><i class="fas fa-bone"></i></div>
+                        <h3>Spine & Back Pain Therapy</h3>
+                        <p>Non-surgical solutions for chronic spinal and nerve pain. We offer targeted nerve blocks, physiotherapy and rehabilitation programs for lasting spinal relief.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENT Category -->
+            <div class="service-category blur-reveal blur-d4" data-category="ent">
+                <div class="category-header">
+                    <div class="category-icon ent-icon"><i class="fas fa-ear-listen"></i></div>
+                    <div>
+                        <h3>ENT Treatments</h3>
+                        <p>Specialized ear, nose & throat care for all ages</p>
+                    </div>
+                </div>
+                <div class="services-grid blur-reveal blur-d5">
+                    <div class="service-card" data-search="ent examination ear nose throat hearing allergy">
+                        <div class="service-icon"><i class="fas fa-ear-listen"></i></div>
+                        <h3>ENT Examination</h3>
+                        <p>Complete ear, nose, and throat assessments including hearing tests and allergy management. We offer thorough evaluations using state-of-the-art equipment for precise diagnosis.</p>
+                    </div>
+                    <div class="service-card" data-search="sinus allergy care sinusitis rhinitis">
+                        <div class="service-icon"><i class="fas fa-head-side-cough"></i></div>
+                        <h3>Sinus & Allergy Care</h3>
+                        <p>Medical management of chronic sinusitis, allergic rhinitis, and respiratory conditions. We provide comprehensive allergy testing and personalized treatment strategies for long-term relief.</p>
+                    </div>
+                    <div class="service-card" data-search="preventive health screening checkup lifestyle">
+                        <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3>Preventive Health Screening</h3>
+                        <p>Regular health check-ups, lifestyle counseling, and chronic disease monitoring. Stay ahead of potential health issues with our comprehensive preventive care programs.</p>
+                    </div>
+                    <div class="service-card" data-search="sleep snoring evaluation apnea sleep study">
+                        <div class="service-icon"><i class="fas fa-lungs"></i></div>
+                        <h3>Sleep & Snoring Evaluation</h3>
+                        <p>Assessment and non-invasive management of sleep apnea and snoring disorders. We help you achieve better sleep quality through comprehensive evaluation and targeted therapies.</p>
+                    </div>
+                    <div class="service-card" data-search="tinnitus ringing ears buzzing sound therapy">
+                        <div class="service-icon"><i class="fas fa-bell"></i></div>
+                        <h3>Tinnitus Treatment</h3>
+                        <p>Specialized care for persistent ringing and buzzing in the ears. Our sound therapy and advanced treatments help reduce tinnitus severity and improve quality of life.</p>
+                    </div>
+                    <div class="service-card" data-search="deviated septum septoplasty nasal airflow">
+                        <div class="service-icon"><i class="fas fa-nose-wide"></i></div>
+                        <h3>Deviated Septum Correction</h3>
+                        <p>Non-surgical and minimally invasive septoplasty options to restore proper nasal airflow. Breathe easier with expert nasal airway correction procedures.</p>
+                    </div>
+                    <div class="service-card" data-search="ear infection treatment antibiotics drainage">
+                        <div class="service-icon"><i class="fas fa-ear-listen"></i></div>
+                        <h3>Ear Infection Treatment</h3>
+                        <p>Expert care for acute and chronic ear infections in both children and adults. Targeted antibiotics and drainage procedures ensure fast and effective recovery.</p>
+                    </div>
+                    <div class="service-card" data-search="thyroid neck evaluation mass imaging biopsy">
+                        <div class="service-icon"><i class="fas fa-x-ray"></i></div>
+                        <h3>Thyroid & Neck Evaluation</h3>
+                        <p>Comprehensive screening for thyroid and neck masses using advanced imaging and biopsy techniques. Early detection and accurate diagnosis for peace of mind.</p>
+                    </div>
+                    <div class="service-card" data-search="speech swallowing therapy dysphagia communication">
+                        <div class="service-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Speech & Swallowing Therapy</h3>
+                        <p>Rehabilitation for speech disorders and dysphagia. Personalized therapy programs restore clear communication and safe swallowing for patients of all ages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="blur-reveal blur-d7">Ready to Schedule a Consultation?</h2>
+            <p class="blur-reveal blur-d8">Our team of specialists is here to help you with personalized care and treatment plans.</p>
+            <a href="book-appointment.html" class="btn blur-reveal blur-d9">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-card">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo pic5.png" alt="SIRVI Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">SIRVI</span>
+                    </a>
+                    <p class="footer-desc">Expert neurology and ENT care in Hyderabad. Compassionate treatment, advanced diagnostics, and personalized care for every patient.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="index.html#doctors">Doctors</a></li>
+                            <li><a href="book-appointment.html">Book Appointment</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Treatments</h4>
+                        <ul>
+                            <li><a href="services.html">Neurology</a></li>
+                            <li><a href="services.html">ENT Care</a></li>
+                            <li><a href="services.html">Migraine</a></li>
+                            <li><a href="services.html">Epilepsy</a></li>
+                            <li><a href="services.html">Sinus & Allergy</a></li>
+                            <li><a href="services.html">Hearing Loss</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="contact.html">Banjara Hills, Hyderabad</a></li>
+                            <li><a href="tel:+914012345678">+91 40 1234 5678</a></li>
+                            <li><a href="mailto:care@cureclinic.in">care@cureclinic.in</a></li>
+                            <li><a href="contact.html">Mon-Sat: 9AM-8PM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 SIRVI Neuro & ENT Center. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

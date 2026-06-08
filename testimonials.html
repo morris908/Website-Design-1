@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - SIRVI Neuro & ENT Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="logo pic5.png" alt="SIRVI Neuro & ENT Center Logo" class="logo-icon-img">
+                    <div class="logo-text-content">
+                        <h1>SIRVI</h1>
+                        <span>NEURO & ENT CENTER</span>
+                        <div class="logo-line"></div>
+                    </div>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#doctors">Doctors</a></li>
+                    <li><a href="book-appointment.html">Book an Appointment</a></li>
+                    <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Testimonials Split Layout -->
+    <section class="testi-split">
+        <!-- Left: Static Info -->
+        <div class="testi-left">
+            <div class="testi-left-inner">
+                <span class="testi-badge blur-reveal"><i class="fas fa-star"></i> Reviews</span>
+                <h2 class="testi-heading blur-reveal blur-d1">What Our Happy Patients Say</h2>
+                <p class="testi-subtext blur-reveal blur-d2">We are committed to providing exceptional care and ensuring every patient feels heard, valued, and supported throughout their healing journey.</p>
+
+                <div class="testi-stats blur-reveal blur-d3">
+                    <div class="testi-stat-card">
+                        <div class="testi-stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="testi-stat-number" data-target="10000">0</div>
+                        <div class="testi-stat-label">Happy Patients</div>
+                    </div>
+                    <div class="testi-stat-card">
+                        <div class="testi-stat-icon"><i class="fas fa-star"></i></div>
+                        <div class="testi-stat-number" data-target="4.9" data-decimal="true">0</div>
+                        <div class="testi-stat-label">Patient Rating</div>
+                    </div>
+                </div>
+
+                <a href="book-appointment.html" class="testi-cta-btn blur-reveal blur-d4">
+                    Book an Appointment <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Auto-Scrolling Dual Column -->
+        <div class="testi-right">
+            <div class="testi-scroll-col testi-col-up">
+                <div class="testi-scroll-track">
+                    <!-- Column 1 Cards -->
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>Dr. Rajesh helped me manage my chronic migraines without any invasive procedures. The level of attention and care is truly remarkable. Highly recommended!</p>
+                        <div class="patient-name">Ramesh K.</div>
+                        <div class="patient-meta">Neurology Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>After struggling with sinus issues for years, Dr. Anitha provided a treatment plan that finally brought relief. I can finally breathe properly again.</p>
+                        <div class="patient-name">Priya S.</div>
+                        <div class="patient-meta">ENT Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p>We visited for my father's dizziness and balance issues. The diagnosis was thorough and the therapy sessions have shown great improvement. Thank you, SIRVI!</p>
+                        <div class="patient-name">Ajay M.</div>
+                        <div class="patient-meta">Family Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>I had been suffering from vertigo for months before visiting SIRVI. Dr. Rajesh conducted a detailed evaluation and prescribed vestibular therapy that worked like magic.</p>
+                        <div class="patient-name">Vikram D.</div>
+                        <div class="patient-meta">Neurology Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>My child had recurring ear infections and Dr. Anitha's treatment plan was excellent. She was so patient and kind with my little one. Highly recommend for families!</p>
+                        <div class="patient-name">Lakshmi T.</div>
+                        <div class="patient-meta">Pediatric ENT Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>The MRI-guided treatment plan Dr. Rajesh designed for my epilepsy has significantly reduced my episodes. His expertise and genuine concern set him apart.</p>
+                        <div class="patient-name">Karthik N.</div>
+                        <div class="patient-meta">Neurology Patient</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-scroll-col testi-col-down">
+                <div class="testi-scroll-track">
+                    <!-- Column 2 Cards -->
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>The ENT examination was very thorough. Dr. Anitha explained everything clearly and the treatment for my tinnitus has been working wonders. Excellent staff!</p>
+                        <div class="patient-name">Sanjay R.</div>
+                        <div class="patient-meta">ENT Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>I was nervous about my EEG results, but the team at SIRVI made the entire process comfortable and explained everything in detail. Forever grateful!</p>
+                        <div class="patient-name">Meena L.</div>
+                        <div class="patient-meta">Neurology Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>After my stroke, I was worried about my recovery. The neuro-rehabilitation team guided me every step of the way. Today I can walk independently again!</p>
+                        <div class="patient-name">Ravi P.</div>
+                        <div class="patient-meta">Neurology Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p>The staff at SIRVI is incredibly courteous and the clinic is always spotless. Dr. Anitha treated my chronic throat infection with a very effective approach.</p>
+                        <div class="patient-name">Sneha G.</div>
+                        <div class="patient-meta">ENT Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>My mother's hearing loss had been gradually worsening. Dr. Anitha conducted comprehensive audiometry and recommended the perfect hearing aid. Life-changing!</p>
+                        <div class="patient-name">Anjali K.</div>
+                        <div class="patient-meta">ENT Patient</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>After my brain tumor surgery, the post-operative neuro care at SIRVI was exceptional. Dr. Rajesh monitored my recovery meticulously. Truly world-class!</p>
+                        <div class="patient-name">Rajendra K.</div>
+                        <div class="patient-meta">Neurology Patient</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer blur-reveal blur-d5">
+        <div class="footer-card">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo pic5.png" alt="SIRVI Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">SIRVI</span>
+                    </a>
+                    <p class="footer-desc">Expert neurology and ENT care in Hyderabad. Compassionate treatment, advanced diagnostics, and personalized care for every patient.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="index.html#doctors">Doctors</a></li>
+                            <li><a href="book-appointment.html">Book Appointment</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Treatments</h4>
+                        <ul>
+                            <li><a href="services.html">Neurology</a></li>
+                            <li><a href="services.html">ENT Care</a></li>
+                            <li><a href="services.html">Migraine</a></li>
+                            <li><a href="services.html">Epilepsy</a></li>
+                            <li><a href="services.html">Sinus & Allergy</a></li>
+                            <li><a href="services.html">Hearing Loss</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="contact.html">Banjara Hills, Hyderabad</a></li>
+                            <li><a href="tel:+914012345678">+91 40 1234 5678</a></li>
+                            <li><a href="mailto:care@cureclinic.in">care@cureclinic.in</a></li>
+                            <li><a href="contact.html">Mon-Sat: 9AM-8PM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 SIRVI Neuro & ENT Center. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile - SIRVI Neuro & ENT Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="logo pic5.png" alt="SIRVI Neuro & ENT Center Logo" class="logo-icon-img">
+                    <div class="logo-text-content">
+                        <h1>SIRVI</h1>
+                        <span>NEURO & ENT CENTER</span>
+                        <div class="logo-line"></div>
+                    </div>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#doctors">Doctors</a></li>
+                    <li><a href="book-appointment.html">Book an Appointment</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+                <div class="mobile-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="profile-container">
+            <div class="profile-sidebar">
+                <div class="profile-img-large">
+                    <i class="fas fa-user-doctor"></i>
+                </div>
+                <h2 id="doc-name">Doctor Name</h2>
+                <p id="doc-role" class="role" style="color: var(--primary); font-weight: 600; margin-bottom: 20px;">Specialization</p>
+                <div class="doctor-meta" style="border: none; margin-bottom: 20px; flex-direction: column; align-items: center; gap: 10px;">
+                    <span id="doc-exp"><i class="fas fa-clock"></i> Experience: X Years</span>
+                </div>
+                <a href="index.html#doctors" class="btn" style="width: 100%; text-align: center; display: block;">Back to Doctors</a>
+            </div>
+            <div class="profile-details">
+                <div class="detail-section">
+                    <h3><i class="fas fa-certificate"></i> Qualifications & Specialization</h3>
+                    <ul class="credentials-list" id="doc-quals">
+                        <li><i class="fas fa-check-circle"></i> Loading...</li>
+                    </ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fas fa-award"></i> Certifications & Memberships</h3>
+                    <ul class="credentials-list" id="doc-certs">
+                        <li><i class="fas fa-check-circle"></i> Loading...</li>
+                    </ul>
+                </div>
+                <div class="detail-section">
+                    <h3><i class="fas fa-user"></i> Personal Introduction</h3>
+                    <p id="doc-intro">Loading professional introduction...</p>
+                </div>
+                <div class="detail-section" style="text-align: center; margin-top: 40px;">
+                    <a href="book-appointment.html" class="btn profile-cta-btn">Book an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-card">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo pic5.png" alt="SIRVI Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">SIRVI</span>
+                    </a>
+                    <p class="footer-desc">Expert neurology and ENT care in Hyderabad. Compassionate treatment, advanced diagnostics, and personalized care for every patient.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="index.html#doctors">Doctors</a></li>
+                            <li><a href="book-appointment.html">Book Appointment</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Treatments</h4>
+                        <ul>
+                            <li><a href="services.html">Neurology</a></li>
+                            <li><a href="services.html">ENT Care</a></li>
+                            <li><a href="services.html">Migraine</a></li>
+                            <li><a href="services.html">Epilepsy</a></li>
+                            <li><a href="services.html">Sinus & Allergy</a></li>
+                            <li><a href="services.html">Hearing Loss</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="contact.html">Banjara Hills, Hyderabad</a></li>
+                            <li><a href="tel:+914012345678">+91 40 1234 5678</a></li>
+                            <li><a href="mailto:care@cureclinic.in">care@cureclinic.in</a></li>
+                            <li><a href="contact.html">Mon-Sat: 9AM-8PM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 SIRVI Neuro & ENT Center. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const doctors = {
+            rajesh: {
+                name: "Dr. Rajesh Kumar",
+                role: "Consultant Neurosurgeon",
+                exp: "15+ Years",
+                quals: ["MBBS", "MS", "MCh (Neurosurgery)", "Fellowship in Neuro-interventional Radiology"],
+                certs: ["Member of Indian Neurosurgical Society", "Fellow of the World Federation of Neurological Surgeons", "Gold Medalist in General Surgery"],
+                intro: "With a passion for improving patient quality of life, Dr. Rajesh believes in a holistic approach to neurological care. By focusing on non-surgical rehabilitative techniques and precision diagnostics, he ensures that patients receive the safest and most effective treatment possible. Outside the clinic, he is a dedicated mentor to medical students and an active researcher in neuro-plasticity."
+            },
+            anitha: {
+                name: "Dr. Anitha Rao",
+                role: "Consultant ENT Surgeon",
+                exp: "12+ Years",
+                quals: ["MBBS", "MS (ENT)", "Fellowship in Rhinology and Skull Base Surgery"],
+                certs: ["Member of Association of Otolaryngologists of India", "Certified Specialist in Endoscopic Sinus Surgery", "Board Certified ENT Surgeon"],
+                intro: "Dr. Anitha is dedicated to providing compassionate care for ear, nose, and throat disorders. Her philosophy focuses on the 'human touch' in medicine—listening to the patient's story before the symptoms. She specializes in minimally invasive techniques that reduce recovery time and improve patient outcomes, ensuring that every person who walks into her clinic feels heard and cared for."
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        const doc = doctors[id];
+
+        if (doc) {
+            document.getElementById('doc-name').textContent = doc.name;
+            document.getElementById('doc-role').textContent = doc.role;
+            document.getElementById('doc-exp').innerHTML = '<i class="fas fa-clock"></i> Experience: ' + doc.exp;
+            document.getElementById('doc-intro').textContent = doc.intro;
+            
+            document.getElementById('doc-quals').innerHTML = doc.quals.map(q => '<li><i class="fas fa-check-circle"></i> ' + q + '</li>').join('');
+            document.getElementById('doc-certs').innerHTML = doc.certs.map(c => '<li><i class="fas fa-check-circle"></i> ' + c + '</li>').join('');
+        } else {
+            window.location.href = 'index.html';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

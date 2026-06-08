@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRVI Neuro & ENT Center - Hyderabad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="logo pic5.png" alt="SIRVI Neuro & ENT Center Logo" class="logo-icon-img">
+                    <div class="logo-text-content">
+                        <h1>SIRVI</h1>
+                        <span>NEURO & ENT CENTER</span>
+                        <div class="logo-line"></div>
+                    </div>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="book-appointment.html">Book an Appointment</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-tagline anim-fade-up"><span class="tagline-dash">&mdash;</span> SCHEDULE YOUR VISIT TODAY</p>
+                <h2 class="anim-fade-up">Expert Neuro &amp; ENT Care for Better Living</h2>
+                <p class="hero-desc anim-fade-up">Advanced non-surgical neurological and ear, nose &amp; throat treatments by Hyderabad&rsquo;s trusted specialists. Compassionate care, precise diagnosis, and lasting relief.</p>
+                <div class="hero-cta-row anim-fade-up">
+                    <a href="book-appointment.html" class="btn hero-btn">Book Appointment</a>
+                </div>
+                <div class="hero-social-proof anim-fade-up">
+                    <div class="avatar-group">
+                        <div class="avatar-circle" style="background:#e0c3fc;"><i class="fas fa-user" style="color:#7c3aed;"></i></div>
+                        <div class="avatar-circle" style="background:#c3e0fc;"><i class="fas fa-user" style="color:#2563eb;"></i></div>
+                        <div class="avatar-circle" style="background:#c3fce0;"><i class="fas fa-user" style="color:#16a34a;"></i></div>
+                    </div>
+                    <div class="proof-text">
+                        <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                        <span class="proof-rating">4.9</span>
+                        <span class="proof-sub">from 500+ <span class="proof-link">patient reviews</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-collage anim-fade-left">
+                <!-- Main large image card -->
+                <div class="collage-card collage-main">
+                    <div class="collage-img-placeholder">
+                        <i class="fas fa-user-doctor"></i>
+                        <span>Expert Specialist</span>
+                    </div>
+                </div>
+                <!-- Success card top-right -->
+                <div class="collage-card collage-success">
+                    <div class="success-inner">
+                        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                        <p class="success-title">Successful<br>Treatment</p>
+                        <p class="success-date">Date: June 2026</p>
+                    </div>
+                </div>
+                <!-- Stats card bottom-left -->
+                <div class="collage-card collage-stats">
+                    <div class="stats-inner">
+                        <div class="stats-icon"><i class="fas fa-heart-pulse"></i></div>
+                        <p class="stats-number">10,000+</p>
+                        <p class="stats-label">Patients Treated</p>
+                    </div>
+                </div>
+                <!-- Secondary image card bottom-right -->
+                <div class="collage-card collage-secondary">
+                    <div class="collage-img-placeholder secondary-placeholder">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>Advanced Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" aria-label="Our Services">
+        <div class="container">
+            <div class="section-title blur-reveal">
+                <h2>Our Services & Treatments</h2>
+                <p>Comprehensive non-surgical medical care tailored to your needs</p>
+            </div>
+
+            <div class="two-card-grid blur-reveal blur-d1">
+                <!-- Neuro Treatment Card -->
+                <div class="treatment-main-card" tabindex="0" data-expand="neuro-expand"
+                     aria-label="Neuro Treatment — click to view details">
+                    <div class="treatment-card-glow neuro-glow"></div>
+                    <div class="treatment-card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Neuro Treatment</h3>
+                    <p>Expert neurological care for migraines, epilepsy, neuropathy & more</p>
+                    <div class="treatment-card-doctor">
+                        <div class="treatment-doctor-avatar"><i class="fas fa-user-doctor"></i></div>
+                        <div>
+                            <span class="treatment-doctor-name">Dr. Rajesh Kumar</span>
+                            <span class="treatment-doctor-role">Consultant Neurosurgeon</span>
+                        </div>
+                    </div>
+                    <span class="treatment-card-cta"><i class="fas fa-arrow-right"></i> View Treatments</span>
+                </div>
+
+                <!-- ENT Treatment Card -->
+                <div class="treatment-main-card" tabindex="0" data-expand="ent-expand"
+                     aria-label="ENT Treatment — click to view details">
+                    <div class="treatment-card-glow ent-glow"></div>
+                    <div class="treatment-card-icon"><i class="fas fa-ear-listen"></i></div>
+                    <h3>ENT Treatment</h3>
+                    <p>Specialized ear, nose & throat care for all ages</p>
+                    <div class="treatment-card-doctor">
+                        <div class="treatment-doctor-avatar"><i class="fas fa-user-doctor"></i></div>
+                        <div>
+                            <span class="treatment-doctor-name">Dr. Anitha Rao</span>
+                            <span class="treatment-doctor-role">Consultant ENT Surgeon</span>
+                        </div>
+                    </div>
+                    <span class="treatment-card-cta"><i class="fas fa-arrow-right"></i> View Treatments</span>
+                </div>
+            </div>
+
+            <div class="services-cta blur-reveal blur-d2">
+                <a href="services.html" class="view-all-treatments-btn" role="button">
+                    <span>View All Treatments</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neuro Treatment Expanded Preview -->
+    <div class="service-expand-overlay" id="neuro-expand"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="neuro-expand-title"
+         aria-hidden="true">
+        <div class="service-expand-panel" id="neuro-expand-panel">
+            <button class="expand-close" aria-label="Close Neuro Treatment preview">&times;</button>
+            <div class="expand-header">
+                <div class="expand-icon"><i class="fas fa-brain"></i></div>
+                <div>
+                    <h2 id="neuro-expand-title">Neuro Treatment</h2>
+                    <p>Advanced non-surgical neurological care</p>
+                </div>
+            </div>
+            <div class="expand-doctor-strip">
+                <div class="expand-doctor-avatar"><i class="fas fa-user-doctor"></i></div>
+                <div>
+                    <span class="expand-doctor-name">Dr. Rajesh Kumar</span>
+                    <span class="expand-doctor-role">Consultant Neurosurgeon &bull; 15+ Years Exp.</span>
+                </div>
+            </div>
+            <div class="expand-body">
+                <h3><i class="fas fa-list-check" aria-hidden="true"></i> Popular Treatments</h3>
+                <div class="expand-services-list">
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-head-side-virus"></i></div>
+                        <div>
+                            <h4>Migraine Management</h4>
+                            <p>Personalized treatment for chronic and acute migraine episodes.</p>
+                        </div>
+                    </div>
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-bolt"></i></div>
+                        <div>
+                            <h4>Epilepsy Care</h4>
+                            <p>Comprehensive seizure management with medication optimization.</p>
+                        </div>
+                    </div>
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-heart-pulse"></i></div>
+                        <div>
+                            <h4>Stroke Rehabilitation</h4>
+                            <p>Post-stroke recovery programs for mobility and cognitive function.</p>
+                        </div>
+                    </div>
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-shield-virus"></i></div>
+                        <div>
+                            <h4>Neuropathy Treatment</h4>
+                            <p>Non-surgical approaches to peripheral nerve damage.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="services.html" class="expand-view-all-btn">
+                    <span>View All Treatments</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENT Treatment Expanded Preview -->
+    <div class="service-expand-overlay" id="ent-expand"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="ent-expand-title"
+         aria-hidden="true">
+        <div class="service-expand-panel" id="ent-expand-panel">
+            <button class="expand-close" aria-label="Close ENT Treatment preview">&times;</button>
+            <div class="expand-header ent-header">
+                <div class="expand-icon"><i class="fas fa-ear-listen"></i></div>
+                <div>
+                    <h2 id="ent-expand-title">ENT Treatment</h2>
+                    <p>Specialized ear, nose & throat care</p>
+                </div>
+            </div>
+            <div class="expand-doctor-strip">
+                <div class="expand-doctor-avatar"><i class="fas fa-user-doctor"></i></div>
+                <div>
+                    <span class="expand-doctor-name">Dr. Anitha Rao</span>
+                    <span class="expand-doctor-role">Consultant ENT Surgeon &bull; 12+ Years Exp.</span>
+                </div>
+            </div>
+            <div class="expand-body">
+                <h3><i class="fas fa-list-check" aria-hidden="true"></i> Popular Treatments</h3>
+                <div class="expand-services-list">
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-wind"></i></div>
+                        <div>
+                            <h4>Sinus & Allergy Care</h4>
+                            <p>Medical management of chronic sinusitis and allergic rhinitis.</p>
+                        </div>
+                    </div>
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-assistive-listening-system"></i></div>
+                        <div>
+                            <h4>Hearing Loss Treatment</h4>
+                            <p>Complete hearing assessments and non-surgical solutions.</p>
+                        </div>
+                    </div>
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-lungs"></i></div>
+                        <div>
+                            <h4>Tonsil & Adenoid Management</h4>
+                            <p>Conservative treatment for tonsillitis and throat infections.</p>
+                        </div>
+                    </div>
+                    <div class="expand-service-item">
+                        <div class="expand-service-icon"><i class="fas fa-microphone"></i></div>
+                        <div>
+                            <h4>Voice Disorder Treatment</h4>
+                            <p>Therapy for hoarseness and vocal cord issues.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="services.html" class="expand-view-all-btn">
+                    <span>View All Treatments</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Doctors Section -->
+    <section id="doctors" class="doctors-section">
+        <div class="container">
+            <div class="section-title reveal-fade">
+                <h2>Meet Our Specialists</h2>
+                <p>Dedicated experts serving the Hyderabad community with excellence</p>
+            </div>
+            <div class="doctors-grid">
+                <div class="doctor-card reveal-fade reveal-fade-d1">
+                    <div class="doctor-img-container">
+                        <div class="doctor-img"><i class="fas fa-user-doctor"></i></div>
+                        <div class="doctor-summary">
+                            <p>Expert in non-surgical neuro-rehabilitation and chronic pain management with a patient-centric approach.</p>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Rajesh Kumar</h3>
+                        <div class="role">Consultant Neurosurgeon</div>
+                        <p class="doctor-short-desc">With over 15 years of experience in neurological care, Dr. Rajesh specializes in the non-surgical management of complex neurological conditions.</p>
+                        <div class="doctor-meta">
+                            <span><i class="fas fa-graduation-cap"></i> MBBS, MS, MCh</span>
+                            <span><i class="fas fa-clock"></i> 15+ Years</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="doctor-profile.html?id=rajesh" class="btn btn-outline">View Profile</a>
+                            <a href="book-appointment.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor-card reveal-fade reveal-fade-d2">
+                    <div class="doctor-img-container">
+                        <div class="doctor-img"><i class="fas fa-user-doctor"></i></div>
+                        <div class="doctor-summary">
+                            <p>Specialist in minimally invasive ENT procedures and comprehensive hearing health solutions.</p>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Anitha Rao</h3>
+                        <div class="role">Consultant ENT Surgeon</div>
+                        <p class="doctor-short-desc">Dr. Anitha brings extensive expertise in ear, nose, and throat care, focusing on conservative and minimally invasive medical treatments.</p>
+                        <div class="doctor-meta">
+                            <span><i class="fas fa-graduation-cap"></i> MBBS, MS (ENT)</span>
+                            <span><i class="fas fa-clock"></i> 12+ Years</span>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="doctor-profile.html?id=anitha" class="btn btn-outline">View Profile</a>
+                            <a href="book-appointment.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors-cta-block reveal-fade reveal-fade-d3">
+                <h3>Want to Consult?</h3>
+                <p>Book your appointment today and select your preferred time slot</p>
+                <a href="book-appointment.html" class="doctors-cta-btn">
+                    <span>Book an Appointment</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Patient Testimonials</h2>
+                <p>Hear from those who trusted us with their care</p>
+            </div>
+            <div class="testi-marquee" id="testiMarquee">
+                <div class="testi-marquee-track">
+                    <!-- Card 1 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">Dr. Rajesh helped me manage my chronic migraines without any invasive procedures. The level of attention and care is truly remarkable.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#e0c3fc;"><i class="fas fa-user" style="color:#7c3aed;"></i></div>
+                            <div><div class="testi-m-name">Ramesh K.</div><div class="testi-m-meta">Neurology Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">After struggling with sinus issues for years, Dr. Anitha provided a treatment plan that finally brought relief. The clinic is modern and staff is very supportive.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#c3e0fc;"><i class="fas fa-user" style="color:#2563eb;"></i></div>
+                            <div><div class="testi-m-name">Priya S.</div><div class="testi-m-meta">ENT Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p class="testi-m-text">We visited for my father's dizziness and balance issues. The diagnosis was thorough and the therapy sessions have shown great improvement.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#c3fce0;"><i class="fas fa-user" style="color:#16a34a;"></i></div>
+                            <div><div class="testi-m-name">Ajay M.</div><div class="testi-m-meta">Family Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">The epilepsy management program has been life-changing. My seizures are now well-controlled and I feel confident about my health.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#fde68a;"><i class="fas fa-user" style="color:#d97706;"></i></div>
+                            <div><div class="testi-m-name">Vikram T.</div><div class="testi-m-meta">Neurology Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">My son's hearing loss was diagnosed early and the non-surgical approach worked wonders. Dr. Anitha is incredibly patient with children.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#fecdd3;"><i class="fas fa-user" style="color:#e11d48;"></i></div>
+                            <div><div class="testi-m-name">Meena L.</div><div class="testi-m-meta">ENT Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">Stroke rehabilitation seemed hopeless until I found SIRVI. The therapy sessions brought back my mobility and I'm walking again.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#d1fae5;"><i class="fas fa-user" style="color:#059669;"></i></div>
+                            <div><div class="testi-m-name">Suresh B.</div><div class="testi-m-meta">Rehabilitation Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p class="testi-m-text">Chronic neck pain for 5 years — nothing worked until Dr. Rajesh's nerve treatment. The relief was almost immediate.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#e0e7ff;"><i class="fas fa-user" style="color:#4f46e5;"></i></div>
+                            <div><div class="testi-m-name">Divya R.</div><div class="testi-m-meta">Neurology Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">My tinnitus was driving me crazy. The specialized treatment here reduced it significantly. I can finally enjoy quiet moments.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#fef3c7;"><i class="fas fa-user" style="color:#b45309;"></i></div>
+                            <div><div class="testi-m-name">Karthik N.</div><div class="testi-m-meta">ENT Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">The team at SIRVI made my ENT surgery feel effortless. Pre-op, procedure, and follow-up — everything was handled professionally.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#ede9fe;"><i class="fas fa-user" style="color:#7c3aed;"></i></div>
+                            <div><div class="testi-m-name">Arjun P.</div><div class="testi-m-meta">ENT Patient</div></div>
+                        </div>
+                    </div>
+                    <!-- Card 10 -->
+                    <div class="testi-m-card">
+                        <div class="testi-m-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testi-m-text">Best neuro care in Hyderabad. My mother's neuropathy treatment showed results within weeks. The doctors truly listen and care.</p>
+                        <div class="testi-m-patient">
+                            <div class="testi-m-avatar" style="background:#fce7f3;"><i class="fas fa-user" style="color:#db2777;"></i></div>
+                            <div><div class="testi-m-name">Lakshmi V.</div><div class="testi-m-meta">Family Patient</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="testimonials.html" class="btn">Read All Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Address & Socials (Contact) -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visit Us</h2>
+                <p>We are here to serve you. Reach out or visit our clinic in Hyderabad.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-location-dot"></i>
+                    <h3>Address</h3>
+                     <p>SIRVI Neuro & ENT Center<br>
+                    8-2-601/J, 157, Road No. 10<br>
+                    Gouri Shankar Nagar Colony, Banjara Hills<br>
+                    Hyderabad, Telangana 500034</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contact</h3>
+                    <p>
+                        <a href="tel:+914012345678">+91 40 1234 5678</a><br>
+                        <a href="tel:+919876543210">+91 98765 43210</a><br>
+                        <a href="mailto:care@cureclinic.in">care@cureclinic.in</a>
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Working Hours</h3>
+                    <p>Mon - Sat: 9:00 AM - 8:00 PM<br>
+                    Sunday: 10:00 AM - 2:00 PM<br>
+                    Emergency: 24/7</p>
+                </div>
+            </div>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121811.07543289468!2d78.33813543843694!3d17.43116016489954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97302366c42f%3A0x60af9b4998beac1f!2sWalk%20In%20Clinics!5e0!3m2!1sen!2sin!4v1779580618590!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="socials">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-card">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo pic5.png" alt="SIRVI Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">SIRVI</span>
+                    </a>
+                    <p class="footer-desc">Expert neurology and ENT care in Hyderabad. Compassionate treatment, advanced diagnostics, and personalized care for every patient.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="index.html#doctors">Doctors</a></li>
+                            <li><a href="book-appointment.html">Book Appointment</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Treatments</h4>
+                        <ul>
+                            <li><a href="services.html">Neurology</a></li>
+                            <li><a href="services.html">ENT Care</a></li>
+                            <li><a href="services.html">Migraine</a></li>
+                            <li><a href="services.html">Epilepsy</a></li>
+                            <li><a href="services.html">Sinus & Allergy</a></li>
+                            <li><a href="services.html">Hearing Loss</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="contact.html">Banjara Hills, Hyderabad</a></li>
+                            <li><a href="tel:+914012345678">+91 40 1234 5678</a></li>
+                            <li><a href="mailto:care@cureclinic.in">care@cureclinic.in</a></li>
+                            <li><a href="contact.html">Mon-Sat: 9AM-8PM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 SIRVI Neuro & ENT Center. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
